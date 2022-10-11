@@ -124,20 +124,20 @@
   display: flex;
 }
 
-.form_input{
+.form-input{
   background-color: #FFF;
   width: 100%;
   display: flex;
 }
 
-.form_message{
+.form-message{
   border: none;
   height: 50px;
   padding-left: 10px;
   width: 100%;
 }
 
-.send_button{
+.form-submit{
   height: 50px;
   background-color: #38AEF0;
   margin-left: 15px;
