@@ -5,8 +5,11 @@
       <div class="chat_end">
         <a href="#">チャットを終了する</a>
       </div>
-    </div>  
+    </div>
     <div class="main_chat_view">
+     <%= render partial: 'message', collection: @messages %>
+    </div>
+    <%# <div class="main_chat_view">
       <div class="message_box">
         <div class="message_info">
           <div class="message_user">
@@ -33,7 +36,7 @@
         こんにちは
         </div>
       </div>
-    </div>
+    </div> %>
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
   <div class="form-input">
     <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
